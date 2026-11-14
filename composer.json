@@ -1,0 +1,21 @@
+{
+  "name": "be-solutions/be-solutions-php",
+  "description": "Be Solutions PHP SDK: video calls, email and SMS APIs, with Laravel integration",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["webrtc", "video", "sms", "email", "laravel", "be-solutions"],
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": { "BeSolutions\\": "src/" }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["BeSolutions\\Laravel\\BeSolutionsServiceProvider"],
+      "aliases": { "BeSolutions": "BeSolutions\\Laravel\\Facades\\BeSolutions" }
+    }
+  }
+}
